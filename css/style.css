@@ -1,0 +1,313 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root { 
+    --primary-color : #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+
+}
+
+html, body{ 
+    height: 100%;
+}
+
+body{ 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: white;
+    margin: 0;
+    height: 100%;
+}
+
+a{ 
+    text-decoration: none;
+    color: #333;
+}
+
+ul{ 
+    list-style: none; 
+}
+
+img{ 
+    max-width: 100px;
+    image-rendering: auto;
+}
+
+/* Navigation Bar */
+.navbar{ 
+    background-color: white;
+    padding: 20px;
+}
+
+.navbar .container{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar .main-menu ul{ 
+    display: flex; 
+}
+
+.navbar ul li a { 
+    padding: 10px 20px;
+    display: block;
+    overflow: hidden;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: var(--primary-color);
+} 
+
+
+/*Bottom Nav*/ 
+.bottom_nav{ 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.bottom_nav .container{ 
+    justify-content:space-around;
+}
+
+
+
+/*Contact Form*/
+
+.contact-form {
+    padding: 10px 10px;
+}
+.contact-form .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--light-color);
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input{ 
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;}
+
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+
+/*About Me*/
+.about-me { 
+    padding: 10px;
+    height: 100%;
+}
+
+.about-me .container{ 
+    display: flex;
+    height: 100%;
+}
+
+
+
+
+/*Resume Page*/ 
+
+
+.resume .container{ 
+    display: flex;
+    height: 100%;
+}
+
+.resume {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.resume-content {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+
+.subsection-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subsection p {
+    margin: 0;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.awards,
+.activities,
+.coursework,
+.certifications,
+.skills,
+.languages {
+    padding: 0;
+}
+
+.resume a:hover {
+    text-decoration: underline;
+}
+
+
+/* Utility Classes*/
+
+.container{ 
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.resume {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+/* Button Classes*/
+/* Base button styles */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background-color: var(--btn-background-color, var(--light-color));
+    /* Default fallback */
+    color: var(--btn-text-color, #333);
+    /* Default fallback */
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    /* Adjusted transition duration for a more realistic hover effect */
+}
+
+/* Hover effect */
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Primary button style */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Dark button style */
+.btdarkn- {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+/* Block button style */
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+/* Text Classes*/
+
+.text-xxl{ 
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl{ 
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-mds {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-xsm {
+    font-size: 0.6rem;
+    font-style: italic;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 5 0 5px;
+}
+
+.text-center{ 
+    text-align: center;
+}
