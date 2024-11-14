@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <!-- Main Menu -->
+            <div class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a class="btn" href="contact_me.html"><i class="fa fa-envelope"></i> Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <!-- Filter Section -->
+            <div id="filter-container" class="filter-container">
+                <div class="tag-filter-container">
+                    <label for="tag-filter" class="tag-filter-label">Filter by tag:</label>
+                    <select id="tag-filter" class="tag-filter-dropdown">
+                        <option value="all">All</option> <!-- Default "All" option -->
+                    </select>
+                </div>
+            </div>
+            <!-- Portfolio Grid -->
+            <div id="portfolio-container" class="portfolio-grid">
+                <!-- Portfolio items will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Navbar -->
+    <section class="navbar bottom_nav">
+        <div class="container">
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="https://github.com/nour662">
+                            <i class="fa fa-github text-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/nour-a-4375a4164">
+                            <i class="fa fa-linkedin text-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../js/portfolio.js"></script>
+    
+</body>
+</html>

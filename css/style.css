@@ -24,6 +24,7 @@ body{
     background-color: white;
     margin: 0;
     height: 100%;
+    background-image: url("../img/vecteezy_abstract-white-background-with-wavy-shapes-flowing-and_36340712_591/vecteezy_abstract-white-background-with-wavy-shapes-flowing-and_36340712.jpg");
 }
 
 a{ 
@@ -42,11 +43,18 @@ img{
 
 /* Navigation Bar */
 .navbar{ 
+    height: 80px;
+    /*background-image: url("../img/animation.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-color: white;
-    padding: 20px;
+    background-position: center;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .navbar .container{ 
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,6 +83,7 @@ img{
     position: relative;
     bottom: 0;
     width: 100%;
+    background-image: none;
 }
 .bottom_nav .container{ 
     justify-content:space-around;
@@ -91,7 +100,7 @@ img{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--light-color);
+    background-color: white;
     height: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -143,54 +152,80 @@ textarea {
 
 /*Resume Page*/ 
 
-
-.resume .container{ 
+.resume{ 
     display: flex;
-    height: 100%;
 }
 
-.resume {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+.resume h2 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.resume .unit-title{ 
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 2s;
+    
+}
+
+.resume a:hover{ 
+    color: var(--primary-color);
+    text-decoration-line: underline;
 }
 
 
-.resume-content {
-    padding: 20px;
+.date{ 
+    font-size: .9rem;
+    color: #777;
+    font-style: italic; 
+    float: right;
 }
 
-.section {
-    margin-bottom: 20px;
+.citystate{
+    font-size: .9rem;
+    color: #777;
+    font-style: italic;
+    float: right;
 }
 
 
-.subsection-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.location{ 
+    font-style: italic;
+    font-weight: 350;
+    font-size: 1.09rem;
 }
 
-.subsection p {
-    margin: 0;
+.resume hr{ 
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-.job-title {
-    font-weight: bold;
+.resume ul {
+    margin-top: 10px;
+    padding-left: 50px;
+    list-style-position: outside;
 }
 
-.awards,
-.activities,
-.coursework,
-.certifications,
-.skills,
-.languages {
-    padding: 0;
+.resume ul li {
+    list-style-type: circle;
 }
 
-.resume a:hover {
-    text-decoration: underline;
+.resume .subsection-title{ 
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-weight: 500;
+
 }
 
+.description{ 
+    font-size: .9rem;
+}
+
+.skill-description{ 
+    float: right;
+}
 
 /* Utility Classes*/
 
@@ -205,23 +240,102 @@ textarea {
     margin: 0 auto;
     padding: 0 15px;
 }
-.resume {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
 
 .section {
     margin-bottom: 20px;
 }
+
+
+
+
+/* Portfolio Classes*/ 
+.portfolio-section {
+    padding: 50px 0;
+    height: 100%;
+}
+
+.portfolio-section a{ 
+    color: var(--primary-color);
+    font-weight: bold;
+
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.portfolio-item p {
+    color: #666;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.portfolio-item .long-description {
+    display: none;
+    font-size: 0.85em;
+}
+
+.portfolio-item:hover .long-description {
+    display: block;
+}
+
+.tag-filter-container {
+    display: flex;
+    align-items: center;
+}
+
+.tag-filter-label, .tag-filter-dropdown {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; 
+}
+
+.tag-filter-label {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* Dropdown styling */
+.tag-filter-dropdown {
+    margin-bottom: 20px;
+}
+
+
+
+
+
 
 /* Button Classes*/
 /* Base button styles */
 .btn {
     display: inline-block;
     padding: 13px 20px;
-    background-color: var(--btn-background-color, var(--light-color));
-    /* Default fallback */
-    color: var(--btn-text-color, #333);
+    background-color: var(--btn-background-color,#333);
+    color: var(--btn-text-color,var(--light-color));
     /* Default fallback */
     font-weight: 600;
     text-decoration: none;
