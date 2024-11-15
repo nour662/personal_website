@@ -1,4 +1,4 @@
-emailjs.init("user_id");
+emailjs.init("jkvbuK8i5tfMGte-D");
 
 // Form submission event listener
 document.addEventListener("DOMContentLoaded", function () {
@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Send email using EmailJS for each service ID
         Promise.all([
-            emailjs.send("service_id", "template_id", emailParams),
-            emailjs.send("service_id", "template_id", emailParams)
+            emailjs.send("service_7jyuhhe", "template_9a76yrc", emailParams),
+            emailjs.send("service_msrrot2", "template_9a76yrc", emailParams)
         ])
         .then(function(response) {
             alert("Your message has been sent successfully!");
