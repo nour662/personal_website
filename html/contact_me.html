@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon/message.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +18,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 
 <body>
     <!-- Top Navigation Bar -->
@@ -46,31 +44,31 @@
     <!--Contact Page-->
     <section class="contact-form">
         <div class="container">
-            <h2 class="text-xxl">Contact Me</h2>
+            <h2 class="text-xxl text-center">Contact Me</h2>
             <form id="contactForm">
                 <div class="form-group">
-                    <label for="first_name">First Name</label>
+                    <label class="text-md text-bold" for="first_name">First Name</label>
                     <input type="text" id="first_name" class="text-sm" placeholder="Your First Name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="last_name">Last Name</label>
+                    <label class="text-md text-bold" for="last_name">Last Name</label>
                     <input type="text" id="last_name" class="text-sm" placeholder="Your Last Name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label class="text-md text-bold" for="email">Email</label>
                     <input type="email" id="email" class="text-sm" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <label for="subject_line">Subject</label>
-                    <input type="text" id="subject_line" class="text-sm" placeholder="Subject">
+                    <label class="text-md text-bold" for="subject_line">Subject</label>
+                    <input type="text" id="subject_line" class="text-sm" placeholder="Subject" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
+                    <label class="text-md text-bold" for="message">Message</label>
                     <textarea name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary text-sm">Submit</button>
+                <button type="submit" class="btn btn-primary text-mds">Submit</button>
             </form>
         </div>
     </section>
@@ -94,5 +92,7 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../js/contactForm.js"></script>
 </body>
 </html>

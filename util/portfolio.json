@@ -5,7 +5,7 @@
         "short-description" : "Mid-Atlantic I-Corps Hub", 
         "long-description": "Developed automation and data collection scripts for various projects.",
         "link": "https://github.com/nour662/icorps-data",
-        "image" : "../img/icorps.png" 
+        "image" : "../img/portfolio-icons/icorps.png" 
     }, 
 
     {   
@@ -14,7 +14,7 @@
         "short-description" : "Provided by the iSchool @ UMD. Dynamic Web Design.", 
         "long-description": "Clato: Finding the least common ancestor between two species.",
         "link": "https://github.com/inst377-group3/Final-Project-Base",
-        "image" : "../img/clato.png" 
+        "image" : "../img/portfolio-icons/clato.png" 
     },
 
     { 
@@ -23,7 +23,7 @@
         "short-description" : "Provided by the iSchool @ UMD. Data Sciences & Analytics", 
         "long-description": "ML Modeling for Wind Turbine Performance.",
         "link": "https://github.com/nour662/introToDataScience_Final",
-        "image" : "../img/inst737.png" 
+        "image" : "../img/portfolio-icons/inst737.png" 
     }, 
 
     {       
@@ -32,16 +32,16 @@
         "short-description" : "Provided by the iSchool @ UMD. Big Data Infrastructure.", 
         "long-description": "Implemented an ETL pipeline for sports statistics using GCP.",
         "link": "https://gitfront.io/r/nour662/JmBCbmCFCN2K/INST767-Big-Data-Infrastructure/",
-        "image" : "../img/gcp.png" 
+        "image" : "../img/portfolio-icons/gcp.png" 
     }, 
     
-    {       
+    {     
         "project_title" : "Personal Website" , 
         "tags" : ["Web Design"], 
         "short-description" : "This website!", 
         "long-description": "A personal project completed for fun ☻.",
         "link": "https://gitfront.io/r/nour662/2DfwrkMynzH1/personal-website/",
-        "image" : "../img/website.png" 
+        "image" : "../img/portfolio-icons/website.png" 
     },
 
     {
@@ -50,7 +50,7 @@
         "short-description": "Provided by the iSchool @ UMD. Database Design",
         "long-description": "Completed during my undergraduate studies.",
         "link" : "https://github.com/nour662/INST327", 
-        "image" : "../img/db_design.png"
+        "image" : "../img/portfolio-icons/db_design.png"
     },
 
     {
@@ -59,7 +59,7 @@
         "short-description" : "Provided by the iSchool @ UMD. Object-Oriented Programming for Information Science", 
         "long-description" : "Later went on to become a TA and Academic Peer Mentor for this course.",
         "link": "https://gitfront.io/r/nour662/YHrNoUAM8tuv/INST326/",
-        "image" : "../img/oop.png" 
+        "image" : "../img/portfolio-icons/oop.png" 
     },
     
     {
@@ -68,6 +68,6 @@
         "short-description" : "Provided by the iSchool @ UMD. Data Sources & Manipulation", 
         "long-description": "Completed during my undergraduate studies.",
         "link": "https://github.com/nour662/INST447",
-        "image" : "../img/analytics.png" 
+        "image" : "../img/portfolio-icons/analytics.png" 
     }
 ]
